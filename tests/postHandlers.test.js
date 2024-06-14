@@ -7,12 +7,12 @@ const requestBody = {
 
 test('Request status code should be 200', async () => {
 	let actualResponseCode;
-	let response
+	let response;
     try {
 		response = await fetch(`${config.API_URL}/speedy/v1/calculate`, {
 			method: 'POST',
 			headers: {
-			'Content-Type': 'application/json'
+				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(requestBody)
 		});
@@ -21,7 +21,7 @@ test('Request status code should be 200', async () => {
 		console.error(error);
 	}
 
-	expect(response.status).toBe(200);  // Check if the status code is 200
+	expect(actualResponseCode).toBe(200);  // Check if the status code is 200
 });
 
 
@@ -31,7 +31,7 @@ test('Request body should contain Speedy', async () => {
 		const response = await fetch(`${config.API_URL}/speedy/v1/calculate`, {
 			method: 'POST',
 			headers: {
-			'Content-Type': 'application/json'
+				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(requestBody)
 		});
