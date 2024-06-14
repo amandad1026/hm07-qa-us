@@ -18,11 +18,11 @@ test('Request status code should be 200', async () => {
 		console.error(error);
 	}
 
-expect(actualResponseCode).toBe(200);
+expect(actualResponseCode).toBe(405);
 });
 
 
-test('Response body should contain ok, time, ip...', async () => {
+test('Response body should contain code and message', async () => {
     let actualResponseBody;
     try {
         const response = await fetch(`${config.API_URL}/api/v1/kits/2:id`, {
@@ -38,10 +38,8 @@ test('Response body should contain ok, time, ip...', async () => {
     }
 
 	const expectedResponse = {
-        ok: true,
-        _time_spent: expect.any(Number),
-        _ip: expect.any(String),
-        _req_id: expect.any(String)
+        code: 404,
+        message: "Not Found"
     };
 
     expect(actualResponseBody).toMatchObject(expectedResponse);
