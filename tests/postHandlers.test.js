@@ -1,4 +1,4 @@
-//POST Test 1 checks that creating and order/getting new resources for an order returns 200 status code
+// eslint-disable-next-line no-undef
 const config = require('../config');
 
 const requestBody = {
@@ -23,9 +23,9 @@ test('Request status code should be 200', async () => {
 
 	expect(actualResponseCode).toBe(200);  // Check if the status code is 200
 });
+/*POST Test 1 checks that creating and order/getting new resources for an order returns 200 status code*/
 
 
-//POST Test 2 checks that creating and order/getting new resources for an order returns the appropriate body response
 test('Request body should contain Speedy', async () => {
 	let actualResponseBody;
     try {
@@ -53,3 +53,4 @@ test('Request body should contain Speedy', async () => {
         clientDeliveryCost: 0
     });
 });
+/*POST Test 2 checks that creating and order/getting new resources for an order returns the appropriate body response*/

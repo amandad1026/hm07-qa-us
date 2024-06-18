@@ -1,5 +1,4 @@
- //DELETE Test 1 checks that deleting an exsiting order returns 200 status code
-
+// eslint-disable-next-line no-undef 
 const config = require('../config');
 
 test('Request status code should be 200', async () => {
@@ -15,8 +14,8 @@ test('Request status code should be 200', async () => {
 
     expect(actualResponseCode).toBe(200);
 });
+//DELETE Test 1 checks that deleting an exsiting order returns 200 status code
 
-//DELETE Test s checks that deleting an exsiting order returns the expected data
 test('Response body should contain "ok": true', async () => {
     let actualResponseBody;
     try {
@@ -34,3 +33,4 @@ test('Response body should contain "ok": true', async () => {
 
     expect(actualResponseBody).toMatchObject(expectedSuccessResponse);
 });
+//DELETE Test s checks that deleting an exsiting order returns the expected data

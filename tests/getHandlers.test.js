@@ -1,5 +1,4 @@
-//GET Test 1 checks that getting an order returns 200 status code
-
+// eslint-disable-next-line no-undef
 const config = require('../config');
 
 test('Request status code should be 200', async () => {
@@ -13,9 +12,9 @@ test('Request status code should be 200', async () => {
 
 	expect(actualResponseCode).toBe(200);
 });
+/*GET Test 1 checks that getting an order returns 200 status code*/
 
 
-//Get Test 2 checks that getting an order returns the expected body data
 test('Response body should contain the expected warehouse', async () => {
 	let actualResponseBody;
 	try {
@@ -35,3 +34,4 @@ test('Response body should contain the expected warehouse', async () => {
 
     expect(actualResponseBody).toEqual(expect.arrayContaining([expect.objectContaining(expectedWarehouse)]));
 });
+/*Get Test 2 checks that getting an order returns the expected body data*/
