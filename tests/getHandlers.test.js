@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-undef
-/*GET Test 1 checks that getting an order returns 200 status code*/
+//GET Test 1 checks that getting an order returns 200 status code
+
 const config = require('../config');
 
 test('Request status code should be 200', async () => {
@@ -15,7 +15,7 @@ test('Request status code should be 200', async () => {
 });
 
 
-/*Get Test 2 checks that getting an order returns the expected body data*/
+//Get Test 2 checks that getting an order returns the expected body data
 test('Response body should contain the expected warehouse', async () => {
 	let actualResponseBody;
 	try {

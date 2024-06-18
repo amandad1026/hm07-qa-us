@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-undef
-/*PUT Test 1 checks that updating an order returns 200 status code*/
+//PUT Test 1 checks that updating an order returns 200 status code
 const config = require('../config');
 
 const requestBody = {}
@@ -22,7 +21,7 @@ test('Request status code should be 200', async () => {
 expect(actualResponseCode).toBe(405);
 });
 
-/*POST Test 2 checks that updating an order returns the appropriate body response*/
+//POST Test 2 checks that updating an order returns the appropriate body response
 test('Response body should contain code and message', async () => {
     let actualResponseBody;
     try {
