@@ -20,3 +20,9 @@ Also use [apiDocs](https://cnt-f24c25eb-9569-46d6-9b0f-66da2515234c.containerhub
 6. Secure an API endpoint and make sure it is functional in PostMan
 7. Update the endpoint in the test files and add JavaScript to the necessary lines to properly run the tests
 8. Run the tests using npx jest
+
+9. Updated Sep 30 2024
+8. Reran Oct 25 2025
+9. Checked Project Nov 12 2024
+10. Compared project to another Dec 12 2024
+11. Did another project and checked similarities Jan 15 2024
